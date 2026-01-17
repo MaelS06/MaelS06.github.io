@@ -1,14 +1,28 @@
-// animation simple d'apparition au scroll
-const cards = document.querySelectorAll('.card');
+// Navbar animation
+window.addEventListener('load', () => {
+    const navbar = document.querySelector('.navbar');
+    navbar.style.transition = 'all 0.8s ease';
+    navbar.style.opacity = 1;
+});
 
-window.addEventListener('scroll', () => {
-    cards.forEach(card => {
-        const position = card.getBoundingClientRect().top;
-        const screenHeight = window.innerHeight;
+// Fade-in sections
+const fades = document.querySelectorAll('.fade');
 
-        if (position < screenHeight - 100) {
-            card.style.opacity = 1;
-            card.style.transform = 'translateY(0)';
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
         }
     });
+}, { threshold: 0.2 });
+
+fades.forEach(section => {
+    observer.observe(section);
+});
+
+// Cards animation
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+    observer.observe(card);
 });
