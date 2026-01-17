@@ -1,13 +1,92 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    background-color: #f4f4f4;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: #0a2a43;
+body {
+    background: #0b0f14;
+    color: #e6edf3;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+}
+
+.hero h1 span {
+    color: #00ffcc;
+}
+
+.typing {
+    margin-top: 15px;
+    opacity: 0.8;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 1px solid #00ffcc;
+    color: #00ffcc;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.buttons a:hover {
+    background: #00ffcc;
+    color: #0b0f14;
+}
+
+section {
+    padding: 80px 10%;
 }
 
 h2 {
-    color: #1f4e79;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #00ffcc;
+    text-decoration: underline;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 30px;
+    background: #111827;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.6;
 }
