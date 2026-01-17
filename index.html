@@ -2,20 +2,53 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio – Prénom Nom</title>
+    <title>Prénom Nom | Cyber & Réseaux</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Prénom Nom</h1>
-    <p>Étudiant en BUT Réseaux & Télécommunications – orientation cybersécurité</p>
 
+<header class="hero">
+    <h1>Prénom <span>Nom</span></h1>
+    <p class="typing">Étudiant BUT R&T • Cybersécurité • Réseaux</p>
+
+    <div class="buttons">
+        <a href="#about">Découvrir</a>
+        <a href="#projects">Projets</a>
+    </div>
+</header>
+
+<section id="about">
     <h2>À propos</h2>
     <p>
-        Étudiant en 1ère année de BUT R&T, intéressé par la cybersécurité,
+        Étudiant en <span class="highlight">BUT Réseaux & Télécommunications</span>,
+        passionné par la <span class="highlight">cybersécurité</span>,
         les réseaux et la sécurité des systèmes.
     </p>
+</section>
 
-    <h2>Contact</h2>
-    <p>Email : prenom.nom@email.com</p>
+<section id="skills">
+    <h2>Compétences</h2>
+
+    <div class="skills-grid">
+        <div class="card">🌐 Réseaux</div>
+        <div class="card">🔐 Cybersécurité</div>
+        <div class="card">💻 Systèmes</div>
+        <div class="card">🛠 Outils</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projets</h2>
+    <p>À venir : labs cyber, TP réseau, scripts...</p>
+</section>
+
+<footer>
+    <p>© Prénom Nom • GitHub Pages</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
